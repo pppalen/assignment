@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SCORE</title>
+<script>
+
+function myFunction() {
+	var score = document.getElementById("score").value;
+	if (90 <= score) {
+		document.getElementById("letter").value = 'A';
+	} else if (80 <= score && score < 90) {
+		document.getElementById("letter").value = 'B';
+	} else if (70 <= score && score < 80) {
+		document.getElementById("letter").value = 'C';
+	} else if (60 <= score && score < 70) {
+		document.getElementById("letter").value = 'D';
+	} else {
+		document.getElementById("letter").value = 'E';
+	}
+}
+</script>
+</head>
+<body>
+<h1> OPTION : CONVERT SCORE TO LETTER (GRADE) </h1>
+    Score : <input type="number" id="score" value=""><br>
+
+<p><button onclick="myFunction()">CONVERT</button></p>
+
+Result : <input type="text" id="letter" readonly><br><br>
+</body>
+</html>

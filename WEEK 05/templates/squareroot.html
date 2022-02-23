@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SQUARE ROOT</title>
+</head>
+<body>
+<h1> OPTION : SQUARE ROOT </h1>
+    INPUT A NUMBER : <input id="number">
+
+    <p><button onclick="squareRoot()">SQUAREROOT</button></p>
+    RESULT : <input type="text" id="answer">
+
+    <script type="text/javascript">
+        function squareRoot() {
+            var num=document.getElementById("number").value;
+            var result=num*num;
+            document.getElementById("answer").value=result;
+        }
+    </script>
+</body>
+</html>
